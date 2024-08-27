@@ -1,0 +1,44 @@
+
+GET http://localhost:8000/auth
+
+###
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+    "username": "akbaradityah",
+    "email": "akbaradityah444@gmail.com",
+    "phoneNumber": "085384086119",
+    "photo": "contoh",
+    "password": "adit"
+}
+
+
+
+###
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "email": "akbaradityah444@gmail.com",
+    "password": "adit"
+}
+
+###
+GET http://localhost:8000/product/getProducts
+
+###
+GET http://localhost:8000/product/getProductById/2
+
+###
+GET http://localhost:8000/product/getProductByUserId/4423db4e-c47f-4591-810c-aa6857503406
+
+###
+POST http://localhost:8000/product/createProduct
+Content-Type: application/json
+
+{
+  "name": "Product Name",
+  "description": "Product Description",
+  "image": "product-image-url"
+}
